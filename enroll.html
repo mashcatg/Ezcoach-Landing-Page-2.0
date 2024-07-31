@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- partial:parts/_head.html -->
+    <meta charset="utf-8">
+<title>Happy Box</title>
+<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1, user-scalable=0">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="css/libs.min.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- partial -->
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <!-- partial:parts/_header.html -->
+    <header id="header" class="header">
+    <div class="container">
+        <!-- logo -->
+        <div class="site-logo">
+            <a href="index.html" class="site-logo__link">
+                <picture>
+                    <source srcset="images/logo.png">
+                    <img loading="lazy" class="site-logo__img" src="images/logo.png" alt="logo" style="width: 150px;"/>
+                </picture>
+            </a>
+        </div>
+        <div class="header-mobile">
+
+            <div class="header-nav">
+                <div class="nav-toggle"><span class="nav-toggle__link"></span><span class="nav-toggle__link"></span><span
+                        class="nav-toggle__link"></span></div>
+                <div class="header-nav__container">
+                    <div class="header-nav__menu">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="index.html/#main" class="nav__link">Home</a></li>
+                                <li class="nav__item"><a href="index.html/#notice" class="nav__link">Notice Board</a></li>
+                                <li class="nav__item"><a href="index.html/#courses" class="nav__link">Courses</a></li>
+                                <li class="nav__item"><a href="index.html/#branches" class="nav__link">Branches</a></li>
+                                <li class="nav__item"><a href="index.html/#contacts" class="nav__link">Contacts</a></li>
+                            </ul><!-- //nav__list -->
+                        </nav><!-- //nav -->
+                    </div>
+                    <div class="header-nav__info">
+                        <a href="tel:01537038468">+880 1537038468</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- //container -->
+</header><!-- //site-header -->
+<style>
+    .card-border{
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid rgba(35, 41, 56, 0.1);
+        box-shadow: 0 20px 60px rgba(64, 58, 128, 0.12);
+        padding: 18px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .signInForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signInForm div {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .card-border img{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    .card-border div{
+        display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+    .card-border div div h4{
+        margin-bottom: 10px;
+    }
+    .card-border div img{
+        margin-right: 10px;
+    }
+    .card-border div div p{
+        background-color: rgb(33 191 90 / 20%);
+        color: #21bf5a;
+        border-radius: 4px;
+        padding: 4px;
+        width: fit-content;
+    }
+    .product_image{
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    .card-border div form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    td{
+        background-color: #ffffff !important;
+        border-top: 0 !important;
+    }
+    a{
+        width: fit-content;
+    }
+    table{
+        border: none;
+    }
+    input[type="text"], form input[type="password"], form input[type="tel"], form input[type="email"], form textarea {
+    border: none;
+    border-bottom: 1px solid rgba(127, 116, 255, 0.6);
+    padding: 6px 16px;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 130%;
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    }
+    input[type="text"]:focus, form input[type="password"]:focus, form input[type="tel"]:focus, form input[type="email"]:focus, form textarea:focus {
+    border-color: #4940A7;
+    background-color: transparent;
+    }         
+</style>
+    <!-- partial -->
+    <main id="main" class="main">
+        <section id="freeClass" class="section" style="padding: 150px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col col_6 col_desktop-12">
+                        <div class="card-border">
+                            <!-- <h3 class="text-center" style="margin-bottom: 10px;">Sign In | Ezcoach</h3>
+                            <form action="#">
+                                <div class="signInForm">
+                                    <div>
+                                        <label for="">Student Phone</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div>
+                                        <label for="">Password</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </form> -->
+                            <div style="margin-bottom: 10px;">
+                            <img src="mashcatg.jpg" alt="">
+                            <div style="flex-direction: column;">
+                                <h4>Mehedi Hasan Imad</h4>
+                                <p>Student</p>
+                                
+                            </div>
+                            </div>
+                            <span>Buying as Mehedi. <a href="login">Login</a> or <a href="signup">Sign Up</a> to use another account</span>
+                        </div>
+                        <div class="card-border" style="flex-direction: column;">
+                            <div><h4 style="margin-bottom: 15px;">Select Payment System</h4></div>
+                            <p style="margin-bottom: 10px;">Send to +8801537038468</p>
+                            <div><input type="radio"> Bkash</div>
+                            <div><input type="radio"> Nagad</div>
+                            <div><input type="radio"> Rocket</div>
+                        </div>
+                        <div class="card-border">
+                            <div><h4>Transaction ID</h4></div>
+                        <input type="text" class="form-control" style="width: 100%;" placeholder="Enter Transaction ID">
+                        </div>
+                        <div style="padding: 18px;margin-bottom: 12px;">
+                        <div><h4>Cupon Code</h4></div>
+                        <form action="#"><input type="text" class="form-control" style="width: 80%;" placeholder="Enter Cupon Code">
+                        <a href="javascript:void(0)" class="btn btn_secondary">Apply</a>
+                        </form>
+                        </div>
+                        
+                    </div>
+                    <div class="col col_6 col_desktop-12">
+                        <div class="card-border">
+                            <div>
+                            <img src="images/content/main-page-7.jpg" alt="" class="product_image">
+                            <div style="flex-direction: column;">
+                                <h4>Math - HSC 2026 Course</h4>
+                                <p>BDT 2400</p>
+                                <table class="table table-solid">
+                                    <tr>
+                                        <td>Course Fee</td>
+                                        <td>BDT 2400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Online Portal Fee</td>
+                                        <td>BDT 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount Amount</td>
+                                        <td>BDT 300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Net Payable Amount</td>
+                                        <td>BDT 2000</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                            </div>
+                            <span>You will get access of all Notice, Class, Note, Quiz, Exam, Result, Leaderboard</span>
+                            <div class="row">
+                                <div class="col col_4 col_desktop-12"></div>
+                                <div class="col col_4 col_desktop-12"></div>
+                                <div class="col col_4 col_desktop-12"><a href="submit.html" class="btn" style="margin-top: 15px;">Enroll Now!</a></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+    </main><!-- //middle -->
+    <!-- partial:parts/_footer.html -->
+    <footer id="contacts" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top__container">
+                <div class="row align-center">
+                    <div class="col col_3 col_desktop-12">
+                        <div class="row">
+                            <div class="col col_12 col_desktop-3 col_mob-2 col_mob-p-12"></div>
+                            <div class="col col_12 col_desktop-6 col_mob-8 col_mob-p-12">
+                                <div class="footer-logo text-desktop-center">
+                                    <a href="index.html" class="site-logo site-logo__link">
+                                        <picture>
+                                            <source media="(max-width: 767px)" srcset="images/logo.png">
+                                            <source srcset="images/logo.png">
+                                            <img loading="lazy" class="site-logo__img" src="images/logo.png" alt="logo"/>
+                                        </picture>
+                                    </a>
+                                    <div class="wysiwyg">
+                                        <p>Pellentesque tempor felis interdum ultrices tincidunt enim integer diam nisi viverra </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_12 col_desktop-3 col_mob-2 col_mob-p-12"></div>
+                        </div>
+                    </div>
+
+                    <div class="col col_6 col_desktop-6 col_mob-12">
+                        <div class="row">
+                            <div class="col col_1 col_desktop-12"></div>
+                            <div class="col col_10 col_desktop-12" style="align-items: center;">
+                                <div class="subscript">
+                                    <h3 class="subscript-title h3 text-center text-desktop-left text-mob-center">Follow us on</h3>
+                                    <ul class="contact-list icon-list">
+                                        <li  class="contact-item icon-text icon-position-left address" style="justify-content: center;align-items: center;">
+                                           <svg class="soc-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 16px;"> <path opacity="0.4" d="M4.36914 24H11.3711C11.6472 24 11.8711 23.7761 11.8711 23.5V16.3242C11.8711 16.0481 11.6472 15.8242 11.3711 15.8242H9.67578C9.39964 15.8242 9.17578 15.6004 9.17578 15.3242V13.6289C9.17578 13.3528 9.39964 13.1289 9.67578 13.1289H11.3711C11.6472 13.1289 11.8711 12.905 11.8711 12.6289V9.75977C11.8711 7.902 13.3825 6.39062 15.2402 6.39062H18.1094C18.3855 6.39062 18.6094 6.61448 18.6094 6.89062V8.58594C18.6094 8.86208 18.3855 9.08594 18.1094 9.08594H15.9141C15.1709 9.08594 14.5664 9.69045 14.5664 10.4336V12.6289C14.5664 12.905 14.7903 13.1289 15.0664 13.1289H17.8975C18.2065 13.1289 18.4415 13.4063 18.3907 13.7111L18.1082 15.4064C18.068 15.6475 17.8594 15.8242 17.615 15.8242H15.0664C14.7903 15.8242 14.5664 16.0481 14.5664 16.3242V23.5C14.5664 23.7761 14.7903 24 15.0664 24H20.6309C22.4886 24 24 22.4886 24 20.6309V4.36914C24 2.51138 22.4886 1 20.6309 1H4.36914C2.51138 1 1 2.51138 1 4.36914V20.6309C1 22.4886 2.51138 24 4.36914 24ZM2.34766 4.36914C2.34766 3.25452 3.25452 2.34766 4.36914 2.34766H20.6309C21.7455 2.34766 22.6523 3.25452 22.6523 4.36914V20.6309C22.6523 21.7455 21.7455 22.6523 20.6309 22.6523H16.4141C16.1379 22.6523 15.9141 22.4285 15.9141 22.1523V17.6719C15.9141 17.3957 16.1379 17.1719 16.4141 17.1719H18.7566C19.0011 17.1719 19.2097 16.9952 19.2498 16.7541L19.9816 12.3635C20.0324 12.0587 19.7974 11.7812 19.4884 11.7812H16.4141C16.1379 11.7812 15.9141 11.5574 15.9141 11.2812V10.9336C15.9141 10.6575 16.1379 10.4336 16.4141 10.4336H19.457C19.7332 10.4336 19.957 10.2097 19.957 9.93359V5.54297C19.957 5.26683 19.7332 5.04297 19.457 5.04297H15.2402C12.6393 5.04297 10.5234 7.15886 10.5234 9.75977V11.2812C10.5234 11.5574 10.2996 11.7812 10.0234 11.7812H8.32812C8.05198 11.7812 7.82812 12.0051 7.82812 12.2812V16.6719C7.82812 16.948 8.05198 17.1719 8.32812 17.1719H10.0234C10.2996 17.1719 10.5234 17.3957 10.5234 17.6719V22.1523C10.5234 22.4285 10.2996 22.6523 10.0234 22.6523H4.36914C3.25452 22.6523 2.34766 21.7455 2.34766 20.6309V4.36914Z"></path> <path d="M3.36914 23H10.3711C10.6472 23 10.8711 22.7761 10.8711 22.5V15.3242C10.8711 15.0481 10.6472 14.8242 10.3711 14.8242H8.67578C8.39964 14.8242 8.17578 14.6004 8.17578 14.3242V12.6289C8.17578 12.3528 8.39964 12.1289 8.67578 12.1289H10.3711C10.6472 12.1289 10.8711 11.905 10.8711 11.6289V8.75977C10.8711 6.902 12.3825 5.39062 14.2402 5.39062H17.1094C17.3855 5.39062 17.6094 5.61448 17.6094 5.89062V7.58594C17.6094 7.86208 17.3855 8.08594 17.1094 8.08594H14.9141C14.1709 8.08594 13.5664 8.69045 13.5664 9.43359V11.6289C13.5664 11.905 13.7903 12.1289 14.0664 12.1289H16.8975C17.2065 12.1289 17.4415 12.4063 17.3907 12.7111L17.1082 14.4064C17.068 14.6475 16.8594 14.8242 16.615 14.8242H14.0664C13.7903 14.8242 13.5664 15.0481 13.5664 15.3242V22.5C13.5664 22.7761 13.7903 23 14.0664 23H19.6309C21.4886 23 23 21.4886 23 19.6309V3.36914C23 1.51138 21.4886 0 19.6309 0H3.36914C1.51138 0 0 1.51138 0 3.36914V19.6309C0 21.4886 1.51138 23 3.36914 23ZM1.34766 3.36914C1.34766 2.25452 2.25452 1.34766 3.36914 1.34766H19.6309C20.7455 1.34766 21.6523 2.25452 21.6523 3.36914V19.6309C21.6523 20.7455 20.7455 21.6523 19.6309 21.6523H15.4141C15.1379 21.6523 14.9141 21.4285 14.9141 21.1523V16.6719C14.9141 16.3957 15.1379 16.1719 15.4141 16.1719H17.7566C18.0011 16.1719 18.2097 15.9952 18.2498 15.7541L18.9816 11.3635C19.0324 11.0587 18.7974 10.7812 18.4884 10.7812H15.4141C15.1379 10.7812 14.9141 10.5574 14.9141 10.2812V9.93359C14.9141 9.65745 15.1379 9.43359 15.4141 9.43359H18.457C18.7332 9.43359 18.957 9.20974 18.957 8.93359V4.54297C18.957 4.26683 18.7332 4.04297 18.457 4.04297H14.2402C11.6393 4.04297 9.52344 6.15886 9.52344 8.75977V10.2812C9.52344 10.5574 9.29958 10.7812 9.02344 10.7812H7.32812C7.05198 10.7812 6.82812 11.0051 6.82812 11.2812V15.6719C6.82812 15.948 7.05198 16.1719 7.32812 16.1719H9.02344C9.29958 16.1719 9.52344 16.3957 9.52344 16.6719V21.1523C9.52344 21.4285 9.29958 21.6523 9.02344 21.6523H3.36914C2.25452 21.6523 1.34766 20.7455 1.34766 19.6309V3.36914Z"></path> </svg>
+                                           <a class="contact-link" style="margin-left: 5px;" target="_blank" href="https://www.facebook.com">Ezcoach</a>
+                                        </li>
+                                        <li  class="contact-item icon-text icon-position-left" style="justify-content: center;align-items: center;">
+                                            <svg class="soc-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 16px;"> <path opacity="0.4" d="M4.36914 24H20.6309C22.4886 24 24 22.4886 24 20.6309V4.36914C24 2.51138 22.4886 1 20.6309 1H4.36914C2.51138 1 1 2.51138 1 4.36914V20.6309C1 22.4886 2.51138 24 4.36914 24ZM2.34766 4.36914C2.34766 3.25452 3.25452 2.34766 4.36914 2.34766H20.6309C21.7455 2.34766 22.6523 3.25452 22.6523 4.36914V20.6309C22.6523 21.7455 21.7455 22.6523 20.6309 22.6523H4.36914C3.25452 22.6523 2.34766 21.7455 2.34766 20.6309V4.36914Z"></path> <path opacity="0.4" d="M12.5 19C16.084 19 19 16.084 19 12.5C19 8.91597 16.084 6 12.5 6C8.91597 6 6 8.91597 6 12.5C6 16.084 8.91597 19 12.5 19ZM12.5 7.44444C15.2877 7.44444 17.5556 9.7123 17.5556 12.5C17.5556 15.2877 15.2877 17.5556 12.5 17.5556C9.7123 17.5556 7.44444 15.2877 7.44444 12.5C7.44444 9.7123 9.7123 7.44444 12.5 7.44444Z"></path> <path opacity="0.4" d="M19 8C20.1028 8 21 7.10278 21 6C21 4.89722 20.1028 4 19 4C17.8972 4 17 4.89722 17 6C17 7.10278 17.8972 8 19 8ZM19 5.33333C19.3675 5.33333 19.6667 5.63247 19.6667 6C19.6667 6.36753 19.3675 6.66667 19 6.66667C18.6325 6.66667 18.3333 6.36753 18.3333 6C18.3333 5.63247 18.6325 5.33333 19 5.33333Z"></path> <path d="M3.36914 23H19.6309C21.4886 23 23 21.4886 23 19.6309V3.36914C23 1.51138 21.4886 0 19.6309 0H3.36914C1.51138 0 0 1.51138 0 3.36914V19.6309C0 21.4886 1.51138 23 3.36914 23ZM1.34766 3.36914C1.34766 2.25452 2.25452 1.34766 3.36914 1.34766H19.6309C20.7455 1.34766 21.6523 2.25452 21.6523 3.36914V19.6309C21.6523 20.7455 20.7455 21.6523 19.6309 21.6523H3.36914C2.25452 21.6523 1.34766 20.7455 1.34766 19.6309V3.36914Z"></path> <path d="M11.5 18C15.084 18 18 15.084 18 11.5C18 7.91597 15.084 5 11.5 5C7.91597 5 5 7.91597 5 11.5C5 15.084 7.91597 18 11.5 18ZM11.5 6.44444C14.2877 6.44444 16.5556 8.7123 16.5556 11.5C16.5556 14.2877 14.2877 16.5556 11.5 16.5556C8.7123 16.5556 6.44444 14.2877 6.44444 11.5C6.44444 8.7123 8.7123 6.44444 11.5 6.44444Z"></path> <path d="M18 7C19.1028 7 20 6.10278 20 5C20 3.89722 19.1028 3 18 3C16.8972 3 16 3.89722 16 5C16 6.10278 16.8972 7 18 7ZM18 4.33333C18.3675 4.33333 18.6667 4.63247 18.6667 5C18.6667 5.36753 18.3675 5.66667 18 5.66667C17.6325 5.66667 17.3333 5.36753 17.3333 5C17.3333 4.63247 17.6325 4.33333 18 4.33333Z"></path> </svg>
+                                            <a class="contact-link" style="margin-left: 5px;" target="_blank" href="https://www.instagram.com">@ezcoach</a>
+                                            
+                                        </li>
+                                        <li  class="contact-item icon-text icon-position-left" style="justify-content: center;align-items: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #7f74ff;transform: ;msFilter:;height: 16px; width: 16px;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></svg>
+                                            <a href="https://www.ezionic.com/ezcoach/" class="contact-link" style="margin-left: 5px;" target="_blank">ezionic.com/ezcoach</a>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col_1 col_desktop-12"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="col col_3 col_desktop-6 col_mob-12">
+                        <ul class="contact-list icon-list">
+                            <li class="contact-item icon-text icon-position-right address">
+                                City. Street Name, 88
+                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.8"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 19.5C16.1421 19.5 19.5 16.1421 19.5 12C19.5 7.85786 16.1421 4.5 12 4.5C7.85786 4.5 4.5 7.85786 4.5 12C4.5 16.1421 7.85786 19.5 12 19.5ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"/> <path d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.75C12.4142 0.75 12.75 1.08579 12.75 1.5V11.25H22.5C22.9142 11.25 23.25 11.5858 23.25 12C23.25 12.4142 22.9142 12.75 22.5 12.75H12.75V22.5C12.75 22.9142 12.4142 23.25 12 23.25C11.5858 23.25 11.25 22.9142 11.25 22.5V12.75H1.5C1.08579 12.75 0.75 12.4142 0.75 12C0.75 11.5858 1.08579 11.25 1.5 11.25H11.25V1.5C11.25 1.08579 11.5858 0.75 12 0.75Z"/> </g> </svg>
+                            </li>
+                            <li class="contact-item icon-text icon-position-right">
+                                <a href="tel:9999912345678" class="contact-link">+999 99 1234 5678</a>
+                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.8"> <path d="M3 8.25C3 6.17893 4.61177 4.5 6.6 4.5H17.4C19.3882 4.5 21 6.17893 21 8.25V13.875C21 15.9461 19.3882 17.625 17.4 17.625H8.4L3 19.5V8.25Z"/> <path d="M6 9.75C6 9.33579 6.33579 9 6.75 9H17.25C17.6642 9 18 9.33579 18 9.75C18 10.1642 17.6642 10.5 17.25 10.5H6.75C6.33579 10.5 6 10.1642 6 9.75Z" fill="white"/> <path d="M6 12.75C6 12.3358 6.33579 12 6.75 12H14.25C14.6642 12 15 12.3358 15 12.75C15 13.1642 14.6642 13.5 14.25 13.5H6.75C6.33579 13.5 6 13.1642 6 12.75Z" fill="white"/> </g> </svg>
+                            </li>
+                            <li class="contact-item icon-text icon-position-right">
+                                <a href="mailto:#" class="contact-link">info@example.com</a>
+                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.8"> <path d="M3 6.42857C3 5.36345 3.80589 4.5 4.8 4.5H19.2C20.1941 4.5 21 5.36345 21 6.42857V16.0714C21 17.1365 20.1941 18 19.2 18H4.8C3.80589 18 3 17.1365 3 16.0714V6.42857Z" /> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.41205 7.9309C5.70746 7.48634 6.30614 7.36621 6.74925 7.66258L12 11.1746L17.2507 7.66258C17.6939 7.36621 18.2925 7.48634 18.5879 7.9309C18.8834 8.37547 18.7636 8.97612 18.3205 9.2725L12 13.5L5.67949 9.2725C5.23638 8.97612 5.11664 8.37547 5.41205 7.9309Z" fill="white"/> </g> </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <span class="copyright text-center">&copy; <?php echo date('Y'); ?> All Right Reserved By Ezcoach. Developed by <a href='https://www.ezionic.com/'>Ezionic</a> </span>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><!-- jQuery -->
+<script src="js/libs.min.js"></script><!-- скрипты библиотек -->
+<script src="js/main.js"></script><!-- кастомные скрипты -->
+    <!-- partial -->
+    <!-- partial:parts/_popups.html -->
+    <!-- partial -->
+</div><!-- //wrapper -->
+</body>
+</html>
+
+
